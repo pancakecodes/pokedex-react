@@ -111,3 +111,10 @@ footer{
   height: 20%;
   color: #fff;
 }
+
+footer ul{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  list-style: none;
+}
