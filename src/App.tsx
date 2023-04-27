@@ -1,33 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <header>
+      <nav>
+        <h1>Pokedex</h1>
+        <ul>
+          <li><input
+            type="text"
+            placeholder="Search..."
+          /></li>
+          <li>
+            contador
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div className='container'>
+      <main>
+        <h1>pokemon details</h1>
+        <div className='pokemon-details'>
+        <div className='description-box'>
+        <p>description</p>
+        </div>
+        <div className='photo-box'>
+        <p>photo pokemon default</p>
+        </div>
+        </div>
+        <div className='pokemon-carrusel'>
+        <p>pokemon carrusel</p>
+        </div>
+      </main>
+      <aside>
+        <h1>pokemon list</h1>
+        <ul>
+          <li>pokemon 1</li>
+          <li>pokemon 2</li>
+          <li>pokemon 3</li>
+          <li>pokemon 4</li>
+          <li>pokemon 5</li>
+          </ul>
+      </aside>
+    </div>
+    <footer>
+      <h1>footer</h1>
+    </footer>
     </>
   )
 }
