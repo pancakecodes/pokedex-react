@@ -55,7 +55,7 @@ function App() {
         <nav>
         <img src={logo} alt="Logo de mi sitio web" className="logo" />
           <ul>
-            <li><input type="text" name="pokemon" placeholder="Search..." /></li>
+            <li><input type="text" name="pokemon" placeholder="Search a pokemon" /></li>
             <li><button onClick={handleClick}>Search</button></li>
             <li>
               <PokemonCounter />
@@ -95,7 +95,6 @@ function App() {
             </a>
           </li>
         </ul>
-        <br></br>
         <h4>Copyright © 2023 pancakecodes</h4>
       </footer>
     </>

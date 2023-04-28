@@ -53,6 +53,33 @@ nav ul li input{
   object-fit: cover;
   width: 200px;
   }
+
+  button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #f44336;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color: #f44336;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  .pokemoncount{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: burlywood;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+
+  }
 /*CSS main*/
 .container{
   display: flex;
@@ -79,13 +106,41 @@ nav ul li input{
   width: 30%;
   height: 500px;
   display: flex;
-
   align-items: center;
   flex-direction: column;
   overflow-y: scroll;
   
   
 }
+
+aside ul{
+  display: flex;
+  padding: 0%;
+  flex-direction: column;
+  gap: 1px;
+  list-style: none;
+  width: 100%;
+}
+
+.container aside ul li{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+.container aside ul li:hover{
+  background-color: #fff;
+  color: #f44336;
+  transition: 0.5s;
+}
+
+
 
 .description-box{
   width: 200px;
@@ -94,8 +149,7 @@ nav ul li input{
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: #f44336;
-  
+ 
 }
 
 .photo-box{
@@ -105,7 +159,6 @@ nav ul li input{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f44336;
 }
 
 .pokemon-details{
@@ -123,12 +176,6 @@ nav ul li input{
   background-color: #f44336;
 }
 
-aside ul{
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  list-style: none;
-}
 
 /*CSS footer*/
 

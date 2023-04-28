@@ -18,7 +18,7 @@ const PokemonCounter: React.FC = () => {
 
   return (
     <div className="pokemoncount">
-      <p>Total number of pokemons: {pokemonCount}</p>
+      <span>pokemons:{pokemonCount}</span>
     </div>
   );
 };
