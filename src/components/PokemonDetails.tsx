@@ -1,10 +1,7 @@
+import PokemonCarousel from "./PokemonCarousel";
+import { Props } from "../types";
 
-interface Props {
-  alias: string;
-  image: string;
-  desc: [];
-}
-function PokemonDetails({ alias, image, desc }: Props) {
+function PokemonDetails({ alias, image, desc, sprites }: Props) {
   return (
     <div>
       <div className="pokemon-details">
@@ -20,14 +17,9 @@ function PokemonDetails({ alias, image, desc }: Props) {
           </p>
         </div>
         <div className="photo-box">
-          <p>{alias}</p>
+          <h2>{alias}</h2>
           <img src={image} alt={alias} />
         </div>
-      </div>
-      <br>
-      </br>
-      <div className="pokemon-carrusel">
-        <p>pokemon carrusel</p>
       </div>
     </div>
   );
