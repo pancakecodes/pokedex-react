@@ -24,6 +24,8 @@ function PokemonDetails({ alias, image, desc }: Props) {
           <img src={image} alt={alias} />
         </div>
       </div>
+      <br>
+      </br>
       <div className="pokemon-carrusel">
         <p>pokemon carrusel</p>
       </div>

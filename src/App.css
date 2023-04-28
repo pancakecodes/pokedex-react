@@ -1,3 +1,4 @@
+ /*CSS general*/
  html *{
   margin: 0;
  }
@@ -14,14 +15,16 @@
   flex-direction: column;
  }
 
+  /*CSS header*/
+
  nav{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
   background-color: #f44336;
-  padding: 0 20px;
-  height: 60px;
+  padding:10px;
+  height: 80px;
   color: #fff;
 }
 
@@ -35,8 +38,22 @@ nav ul{
 }
 nav ul li{
   font-size: 20px;
+
 }
 
+nav ul li input{
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.logo{  
+  object-fit: cover;
+  width: 200px;
+  }
+/*CSS main*/
 .container{
   display: flex;
   flex-direction: row-reverse;
@@ -106,22 +123,6 @@ nav ul li{
   background-color: #f44336;
 }
 
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f44336;
-  height: 20%;
-  color: #fff;
-}
-
-footer ul{
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  list-style: none;
-}
-
 aside ul{
   display: flex;
   flex-direction: column;
@@ -129,3 +130,24 @@ aside ul{
   list-style: none;
 }
 
+/*CSS footer*/
+
+footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f44336;
+  height: 30%;
+  color: #fff;
+}
+
+.social-media{
+  padding: 0%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  list-style: none;
+  
+}
