@@ -42,7 +42,6 @@ nav ul li{
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
   width: 100%;
 }
 
@@ -63,9 +62,11 @@ nav ul li{
   width: 30%;
   height: 500px;
   display: flex;
-  justify-content: center;
+
   align-items: center;
   flex-direction: column;
+  overflow-y: scroll;
+  
   
 }
 
@@ -74,6 +75,7 @@ nav ul li{
   height: 200px;
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
   background-color: #f44336;
   
@@ -83,6 +85,7 @@ nav ul li{
   width: 200px;
   height: 200px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f44336;
@@ -118,3 +121,11 @@ footer ul{
   justify-content: space-between;
   list-style: none;
 }
+
+aside ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  list-style: none;
+}
+

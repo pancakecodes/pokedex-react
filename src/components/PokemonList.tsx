@@ -1,35 +1,30 @@
-import React, { useEffect, useState } from "react";
+// // @flow strict
 
-interface PokemonData {
-  results: Array<{
-    name: string;
-    url: string;
-  }>;
-}
+// import { useEffect, useState } from "react";
 
-const PokemonList: React.FC = () => {
-  const [pokemonList, setPokemonList] = useState<Array<string>>([]);
+// function PokemonList() {
 
-  useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=20")
-      .then((response) => response.json())
-      .then((data: PokemonData) => {
-        const names = data.results.map((pokemon) => pokemon.name);
-        setPokemonList(names);
-      })
-      .catch((error) => console.log(error));
-  }, []);
+//     const [pokemons,setPokemons]=useState([])
 
-  return (
-    <div>
-      <h1>Pokemons list:</h1>
-      <ul>
-        {pokemonList.map((pokemonName) => (
-          <li key={pokemonName}>{pokemonName}</li>
-        ))}
-      </ul>
-    </div>
-  );
-};
+//   useEffect(() => {
+//     fetch("https://pokeapi.co/api/v2/pokemon?limit=150&offset=0")
+//       .then((res) => res.json())
+//       .then((data) => {
+//         setPokemons(data.results);
+//       });
+//   }, []);
+//   return (
+//     <div>
+//       <ul className="lista"> 
+      
+//        {
+//         pokemons.map(element=>{
+//             return <li key={element.name}>{element.name} </li>
+//         })
+//        }
+//       </ul>
+//     </div>
+//   );
+// }
 
-export default PokemonList;
+// export default PokemonList;
