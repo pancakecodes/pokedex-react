@@ -20,7 +20,6 @@ function App() {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
       .then((response) => response.json())
       .then((data) => {
-        
         setPokemonName(data.name);
         setPokemonImage(data.sprites.front_default);
         setPokemonSprites(data.sprites);

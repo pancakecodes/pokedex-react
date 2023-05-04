@@ -11,7 +11,7 @@ export interface CarousselI{
   export interface Props {
     alias: string;
     image: string;
-    desc: [];
+    desc: { flavor_text: string }[];
     sprites: {
       front_default?: string;
       back_default?: string;

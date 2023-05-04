@@ -1,17 +1,14 @@
-import PokemonCarousel from "./PokemonCarousel";
 import { Props } from "../types";
 
-function PokemonDetails({ alias, image, desc, sprites }: Props) {
+function PokemonDetails({ alias, image, desc }: Props) {
   return (
     <div>
       <div className="pokemon-details">
         <div className="description-box">
           <p>
             {
-              desc.map((element: any) => {
-                if (element.language.name == "en") {
-                  return element.flavor_text;
-                }
+         desc.map((element: { flavor_text: string }) => element.flavor_text).filter((element: string) => {
+          return element.length > 0;
               })[1]
             }
           </p>
